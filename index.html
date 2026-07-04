@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sridhar R | ECE & Embedded Systems Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Sridhar R, an Electronics and Communication Engineering undergraduate student specialized in embedded systems, digital electronics, IoT, VLSI design, C, Python, and Verilog.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Background glow elements -->
+    <div class="blob-glow blob-1"></div>
+    <div class="blob-glow blob-2"></div>
+    <div class="blob-glow blob-3"></div>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-icon"><i data-lucide="cpu"></i></span>
+                <span class="logo-text">SRIDHAR<span class="accent-dot">.</span>R</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#simulator" class="nav-link">ECE Simulator</a>
+                <a href="#activities" class="nav-link">Activities</a>
+                <a href="#contact" class="nav-link contact-btn-nav">Contact</a>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-overlay" style="background-image: url('assets/ece-bg.png');"></div>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-container">
+                        <span class="badge"><i data-lucide="terminal" class="badge-icon"></i> ECE Undergraduate</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Sridhar R</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I specialize in <span id="typed-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Passionate about chip design, automation, embedded systems, and building innovative engineering solutions. Transforming complex hardware-software concepts into real-world applications.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/sridhar-ece" target="_blank" aria-label="GitHub" class="social-icon-btn">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sridhar-r-a4b0a7327/" target="_blank" aria-label="LinkedIn" class="social-icon-btn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:sridhar.r9524@gmail.com" aria-label="Email" class="social-icon-btn">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hardware-card-wrapper">
+                        <div class="hardware-card">
+                            <div class="card-header-glow"></div>
+                            <div class="chip-container">
+                                <div class="silicon-chip">
+                                    <div class="chip-core">
+                                        <i data-lucide="binary" class="chip-core-icon"></i>
+                                    </div>
+                                    <div class="chip-pins-t"><span></span><span></span><span></span><span></span><span></span></div>
+                                    <div class="chip-pins-b"><span></span><span></span><span></span><span></span><span></span></div>
+                                    <div class="chip-pins-l"><span></span><span></span><span></span><span></span><span></span></div>
+                                    <div class="chip-pins-r"><span></span><span></span><span></span><span></span><span></span></div>
+                                </div>
+                            </div>
+                            <div class="card-spec-panel">
+                                <div class="spec-row">
+                                    <span class="spec-label">CORE CLK</span>
+                                    <span class="spec-val">100 MHz</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-label">ARCHITECTURE</span>
+                                    <span class="spec-val">FPGA/Verilog</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-label">SYSTEM STATE</span>
+                                    <span class="spec-val text-green animate-pulse">● ACTIVE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="mouse-icon">
+                    <span class="mouse-wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">A brief look into my background, traits, and aspirations.</p>
+                </div>
+                <div class="about-layout-wrapper">
+                    <!-- Left: Profile Photo Container -->
+                    <div class="about-profile-column">
+                        <div class="profile-frame">
+                            <div class="profile-glow"></div>
+                            <div class="profile-image-container">
+                                <!-- Fallback Avatar structure when profile.jpg is missing -->
+                                <div class="profile-fallback-avatar">
+                                    <span class="avatar-initials">SR</span>
+                                    <span class="avatar-tagline">ECE</span>
+                                </div>
+                                <img src="assets/profile.jpg" alt="Sridhar R Profile Photo" class="profile-img" onerror="this.style.display='none';">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right: Info cards -->
+                    <div class="about-grid">
+                        <div class="about-card career-objective-card">
+                            <div class="about-card-icon"><i data-lucide="target"></i></div>
+                            <h3>Career Objective</h3>
+                            <p>
+                                Electronics and Communication Engineering undergraduate with a strong foundation in embedded systems, digital electronics, IoT, and VLSI design. Skilled in C programming and hardware–software integration, with hands-on experience in real-time project development. Passionate about chip design, automation, and building innovative engineering solutions.
+                            </p>
+                        </div>
+                        <div class="about-card traits-card">
+                            <div class="about-card-icon"><i data-lucide="sparkles"></i></div>
+                            <h3>Personality Traits</h3>
+                            <ul class="traits-list">
+                                <li><span class="check-icon"><i data-lucide="check-circle-2"></i></span> Communication Skills</li>
+                                <li><span class="check-icon"><i data-lucide="check-circle-2"></i></span> Self Motivated & Driven</li>
+                                <li><span class="check-icon"><i data-lucide="check-circle-2"></i></span> Quick Learner</li>
+                                <li><span class="check-icon"><i data-lucide="check-circle-2"></i></span> Time Management</li>
+                                <li><span class="check-icon"><i data-lucide="check-circle-2"></i></span> Leadership Skills</li>
+                            </ul>
+                        </div>
+                        <div class="about-card hobbies-card">
+                            <div class="about-card-icon"><i data-lucide="smile"></i></div>
+                            <h3>Interests & Hobbies</h3>
+                            <p>Beyond technology, engineering, and digital circuits, I enjoy:</p>
+                            <div class="hobbies-tags">
+                                <span class="hobby-tag"><i data-lucide="music-4"></i> Listening to Music</span>
+                                <span class="hobby-tag"><i data-lucide="film"></i> Watching Movies</span>
+                                <span class="hobby-tag"><i data-lucide="code-2"></i> Hackathons</span>
+                                <span class="hobby-tag"><i data-lucide="globe"></i> Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section-padding alt-bg">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Academic <span class="text-gradient">Qualifications</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">My educational pathway and academic performance.</p>
+                </div>
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item reveal-item">
+                        <div class="timeline-dot"><i data-lucide="graduation-cap"></i></div>
+                        <div class="timeline-date">2024 - 2028 (Expected)</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>BE in Electronics and Communication Engineering</h3>
+                                <span class="grade-badge">CGPA: 8.4</span>
+                            </div>
+                            <h4 class="institution-name">Kongu Engineering College</h4>
+                            <p class="timeline-details">
+                                Affiliated with Anna University. Focusing on microprocessors, digital design, VLSI design, signal processing, and hardware description languages.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item reveal-item">
+                        <div class="timeline-dot"><i data-lucide="school"></i></div>
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Higher Secondary Education (HSE)</h3>
+                                <span class="grade-badge">90.00%</span>
+                            </div>
+                            <h4 class="institution-name">Thenmalar Higher Secondary School</h4>
+                            <p class="timeline-details">
+                                Completed TN State Board exams with a core focus on Physics, Chemistry, Mathematics, and Computer Science.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item reveal-item">
+                        <div class="timeline-dot"><i data-lucide="award"></i></div>
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Secondary School Leaving Certificate (SSLC)</h3>
+                                <span class="grade-badge">72.60%</span>
+                            </div>
+                            <h4 class="institution-name">Thenmalar Higher Secondary School</h4>
+                            <p class="timeline-details">
+                                Completed TN State Board foundation courses covering Science, Mathematics, and Languages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Technologies and disciplines I've trained in and apply to projects.</p>
+                </div>
+                <div class="skills-grid">
+                    <!-- Programming -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i data-lucide="code-2" class="category-icon text-cyan"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skills-list-container">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">C Programming</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Verilog HDL</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VLSI Design -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i data-lucide="layers" class="category-icon text-purple"></i>
+                            <h3>VLSI & Digital Logic</h3>
+                        </div>
+                        <div class="skills-list-container">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Digital Electronics</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">TTL Design (Transistor-Transistor Logic)</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Xilinx Vivado (FPGA Synthesis)</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Systems & Infrastructure -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i data-lucide="cpu" class="category-icon text-green"></i>
+                            <h3>Embedded & OS</h3>
+                        </div>
+                        <div class="skills-list-container">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Embedded Systems Foundations</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Linux (Ubuntu) Administration</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Windows OS Environment</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Hackathons Section -->
+        <section id="projects" class="projects-section section-padding alt-bg">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Projects & <span class="text-gradient">Hackathons</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Academic creations and competitive hackathons.</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1: FPGA 7-Segment Display -->
+                    <div class="project-card reveal-card">
+                        <div class="project-tag"><i data-lucide="cpu"></i> Academic Project</div>
+                        <div class="project-card-content">
+                            <h3>FPGA-Based 7-Segment Display</h3>
+                            <p>
+                                Designed and implemented a 7-segment display controller using FPGA, demonstrating strong digital design fundamentals. Developed Verilog HDL modules for number decoding and display control, simulated and verified using Xilinx Vivado.
+                            </p>
+                            <div class="tech-tags">
+                                <span>FPGA</span>
+                                <span>Verilog HDL</span>
+                                <span>Xilinx Vivado</span>
+                                <span>Digital Logic</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#simulator" class="btn btn-card-link">
+                                    <span>Try Simulator</span>
+                                    <i data-lucide="arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Water Quality Monitoring -->
+                    <div class="project-card reveal-card">
+                        <div class="project-tag"><i data-lucide="droplet"></i> Hackathon Project</div>
+                        <div class="project-card-content">
+                            <h3>Water Quality Monitoring System</h3>
+                            <p>
+                                Participated in a 30-hour hackathon, contributing to the hardware integration, design, and development of a real-time water quality monitoring solution using IoT sensors. Handled sensor signal calibration and transmission logic.
+                            </p>
+                            <div class="tech-tags">
+                                <span>IoT</span>
+                                <span>Sensors Integration</span>
+                                <span>C Programming</span>
+                                <span>Signal Conditioning</span>
+                            </div>
+                            <div class="project-actions">
+                                <span class="achievement-badge"><i data-lucide="trophy"></i> 30-Hour Hackathon</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Web Design Hackathon -->
+                    <div class="project-card reveal-card">
+                        <div class="project-tag"><i data-lucide="layout"></i> Hackathon Project</div>
+                        <div class="project-card-content">
+                            <h3>Web Design Innovation Hackathon</h3>
+                            <p>
+                                Collaborated in a high-intensity 30-hour hackathon on Web Design. Developed innovative, user-friendly, and responsive front-end web solutions under strict time constraints, honing agile collaboration and interface UI skills.
+                            </p>
+                            <div class="tech-tags">
+                                <span>HTML5</span>
+                                <span>CSS3 / Animations</span>
+                                <span>JavaScript</span>
+                                <span>UI/UX Design</span>
+                            </div>
+                            <div class="project-actions">
+                                <span class="achievement-badge"><i data-lucide="award"></i> 30-Hour Hackathon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ECE Simulator Widget Section -->
+        <section id="simulator" class="simulator-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Interactive <span class="text-gradient">ECE Simulator</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">A live browser simulator of my FPGA-Based 7-Segment Display Controller project. Input hex or toggle pins to see it compile!</p>
+                </div>
+                <div class="simulator-layout">
+                    <!-- Control Panel Card -->
+                    <div class="sim-card controls-card">
+                        <div class="sim-card-header">
+                            <span class="pulse-indicator status-ready"></span>
+                            <h4>FPGA Controller inputs</h4>
+                        </div>
+                        <div class="sim-card-body">
+                            <div class="input-mode-tabs">
+                                <button class="mode-tab active" id="tab-binary">Binary Pins</button>
+                                <button class="mode-tab" id="tab-hex">Hex Keyboard</button>
+                            </div>
+
+                            <!-- Binary input UI -->
+                            <div class="sim-input-section" id="binary-inputs-group">
+                                <p class="sim-input-help">Toggle binary switches to set input state (D3, D2, D1, D0):</p>
+                                <div class="binary-switches">
+                                    <div class="switch-control">
+                                        <span class="switch-label">D3 (MSB)</span>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" id="pin-d3">
+                                            <span class="slider"></span>
+                                        </label>
+                                        <span class="switch-val" id="val-d3">0</span>
+                                    </div>
+                                    <div class="switch-control">
+                                        <span class="switch-label">D2</span>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" id="pin-d2">
+                                            <span class="slider"></span>
+                                        </label>
+                                        <span class="switch-val" id="val-d2">0</span>
+                                    </div>
+                                    <div class="switch-control">
+                                        <span class="switch-label">D1</span>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" id="pin-d1">
+                                            <span class="slider"></span>
+                                        </label>
+                                        <span class="switch-val" id="val-d1">0</span>
+                                    </div>
+                                    <div class="switch-control">
+                                        <span class="switch-label">D0 (LSB)</span>
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" id="pin-d0">
+                                            <span class="slider"></span>
+                                        </label>
+                                        <span class="switch-val" id="val-d0">0</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hex input UI (Hidden initially) -->
+                            <div class="sim-input-section d-none" id="hex-inputs-group">
+                                <p class="sim-input-help">Select a hex character to decode directly:</p>
+                                <div class="hex-grid">
+                                    <button class="hex-key" data-hex="0">0</button>
+                                    <button class="hex-key" data-hex="1">1</button>
+                                    <button class="hex-key" data-hex="2">2</button>
+                                    <button class="hex-key" data-hex="3">3</button>
+                                    <button class="hex-key" data-hex="4">4</button>
+                                    <button class="hex-key" data-hex="5">5</button>
+                                    <button class="hex-key" data-hex="6">6</button>
+                                    <button class="hex-key" data-hex="7">7</button>
+                                    <button class="hex-key" data-hex="8">8</button>
+                                    <button class="hex-key" data-hex="9">9</button>
+                                    <button class="hex-key" data-hex="A">A</button>
+                                    <button class="hex-key" data-hex="B">B</button>
+                                    <button class="hex-key" data-hex="C">C</button>
+                                    <button class="hex-key" data-hex="D">D</button>
+                                    <button class="hex-key" data-hex="E">E</button>
+                                    <button class="hex-key" data-hex="F">F</button>
+                                </div>
+                            </div>
+
+                            <div class="verilog-code-box">
+                                <div class="code-box-header">
+                                    <span>7_seg_decoder.v</span>
+                                    <span class="code-lang">Verilog</span>
+                                </div>
+                                <pre><code><span class="v-keyword">always</span> @(*) <span class="v-keyword">begin</span>
+  <span class="v-keyword">case</span> (binary_in)
+    4'h0: seg_out = 7'b1111110; <span class="v-comment">// g f e d c b a</span>
+    <span class="v-active-code" id="verilog-line">/* active state display */</span>
+  <span class="v-keyword">endcase</span>
+<span class="v-keyword">end</span></code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Board Display Card -->
+                    <div class="sim-card board-card">
+                        <div class="sim-card-header">
+                            <span class="card-logo">XC7A35T FPGA BOARD</span>
+                            <span class="firmware-version">v1.2.0</span>
+                        </div>
+                        <div class="sim-card-body flex-center-col">
+                            <!-- 7-Segment Display Visual representation -->
+                            <div class="segment-display-container">
+                                <div class="seven-segment">
+                                    <!-- Segments -->
+                                    <div class="segment segment-a" id="seg-a"></div>
+                                    <div class="segment segment-b" id="seg-b"></div>
+                                    <div class="segment segment-c" id="seg-c"></div>
+                                    <div class="segment segment-d" id="seg-d"></div>
+                                    <div class="segment segment-e" id="seg-e"></div>
+                                    <div class="segment segment-f" id="seg-f"></div>
+                                    <div class="segment segment-g" id="seg-g"></div>
+                                    <!-- Decimal Point -->
+                                    <div class="dp-dot" id="seg-dp"></div>
+                                </div>
+                            </div>
+
+                            <div class="sim-output-data">
+                                <div class="data-block">
+                                    <span class="data-lbl">BINARY DATA</span>
+                                    <span class="data-val" id="lbl-binary">0000</span>
+                                </div>
+                                <div class="data-block">
+                                    <span class="data-lbl">HEXADECIMAL</span>
+                                    <span class="data-val" id="lbl-hex">0</span>
+                                </div>
+                                <div class="data-block">
+                                    <span class="data-lbl">DECODER OUT (g-a)</span>
+                                    <span class="data-val" id="lbl-decoder">1111110</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Co-Curricular & Activities Section -->
+        <section id="activities" class="activities-section section-padding alt-bg">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Activities & <span class="text-gradient">Leadership</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Workshops, paper presentations, and leadership roles.</p>
+                </div>
+                <div class="activities-grid">
+                    <!-- Activity 1 -->
+                    <div class="activity-card reveal-card">
+                        <div class="activity-icon-container text-cyan">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h3>IEEE Student Branch Member</h3>
+                        <p class="activity-subtitle text-cyan">Executive Member</p>
+                        <p class="activity-detail">
+                            Actively serving as an Executive Member of the IEEE Student Branch. Helping coordinate engineering events, lectures, workshops, and student networking opportunities within Kongu Engineering College.
+                        </p>
+                    </div>
+
+                    <!-- Activity 2 -->
+                    <div class="activity-card reveal-card">
+                        <div class="activity-icon-container text-purple">
+                            <i data-lucide="file-text"></i>
+                        </div>
+                        <h3>Paper Presentation</h3>
+                        <p class="activity-subtitle text-purple">"Satellite Communication"</p>
+                        <p class="activity-detail">
+                            Researched and presented a comprehensive technical paper on "Satellite Communication" mechanisms and developments during the academic symposium at Kongu Engineering College.
+                        </p>
+                    </div>
+
+                    <!-- Activity 3 -->
+                    <div class="activity-card reveal-card">
+                        <div class="activity-icon-container text-green">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <h3>Wearable MEMS Workshop</h3>
+                        <p class="activity-subtitle text-green">Participant</p>
+                        <p class="activity-detail">
+                            Attended a practical, hands-on workshop focused on "Wearable MEMS" technology, sensor designs, and IoT applications, learning about micro-electromechanical systems design pipelines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Reach out for academic collaborations, project consultations, or recruitment.</p>
+                </div>
+                <div class="contact-layout">
+                    <!-- Contact Cards info -->
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon"><i data-lucide="phone"></i></div>
+                            <div class="info-content">
+                                <span>Phone Number</span>
+                                <p>+91 95240 27027</p>
+                                <button class="btn-copy" data-copy="9524027027"><i data-lucide="copy"></i> Copy</button>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon"><i data-lucide="mail"></i></div>
+                            <div class="info-content">
+                                <span>Email Address</span>
+                                <p>sridhar.r9524@gmail.com</p>
+                                <button class="btn-copy" data-copy="sridhar.r9524@gmail.com"><i data-lucide="copy"></i> Copy</button>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                            <div class="info-content">
+                                <span>Location</span>
+                                <p>180, Kullaipalayam, Dharapuram, Tiruppur - 638657, Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card">
+                        <form id="portfolio-contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email</label>
+                                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" placeholder="Project Inquiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Your message details..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit-form" id="btn-submit">
+                                <span>Send Message</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 Sridhar R. All Rights Reserved.</p>
+                <p class="footer-subtext">Designed for Electronics & VLSI engineering excellence.</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="https://github.com/sridhar-ece" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="https://www.linkedin.com/in/sridhar-r-a4b0a7327/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="mailto:sridhar.r9524@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
